@@ -1,0 +1,8 @@
+Saving results:
+
+When the program has shown the necessary results 
+(maximum point and graphs representation), you can save them
+in the form of HTML report with picture of the answer as well.
+
+For this press SAVE REPORT button. It will save your result to 
+"Report.html" and "Report.png" files that go along with the program.

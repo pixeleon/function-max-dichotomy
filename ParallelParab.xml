@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EquationData>
+	<FFunctionData>
+		<FFunctionTerm Degree = "3" Coeff="3"/>
+		<FFunctionTerm Degree = "1" Coeff="0"/>
+		<FFunctionTerm Degree = "2" Coeff="1"/>
+	</FFunctionData>
+	<GFunctionData>
+		<GFunctionPair X="-5" YofX="25"/>
+		<GFunctionPair X="-2" YofX="4"/>
+		<GFunctionPair X="0" YofX="0"/>
+		<GFunctionPair X="1" YofX="1"/>
+		<GFunctionPair X="2" YofX="4"/>
+	</GFunctionData>
+</EquationData>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPaneMain" prefHeight="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="pixeleon.khpi.oop.fmd.application.Controller">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#doClear" text="New" />
+                  <MenuItem mnemonicParsing="false" onAction="#doOpen" text="Open" />
+              <MenuItem mnemonicParsing="false" onAction="#doSave" text="Save" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#doExit" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#doClear" text="Clear" />
+              <MenuItem mnemonicParsing="false" onAction="#doClearFX" text="Clear f(x)" />
+                  <MenuItem mnemonicParsing="false" onAction="#doClearGX" text="Clear g(x)" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Run">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#doSolve" text="Solve" />
+                  <MenuItem mnemonicParsing="false" onAction="#doDraw" text="Plot graph" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#doInputHelp" text="Input data" />
+                  <MenuItem mnemonicParsing="false" onAction="#doSolveHelp" text="Solving equation" />
+                  <MenuItem mnemonicParsing="false" onAction="#doSaveHelp" text="Saving data" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#doAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox fillWidth="false" prefWidth="150.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" text="f(x):">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextField fx:id="textFieldFFunction" />
+            <GridPane alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="130.0" vgap="20.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label contentDisplay="CENTER" text="x:">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label contentDisplay="CENTER" text="g(x):" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="textFieldX1" GridPane.rowIndex="1" />
+                  <TextField fx:id="textFieldYofX1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="textFieldX2" GridPane.rowIndex="2" />
+                  <TextField fx:id="textFieldYofX2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="textFieldX3" GridPane.rowIndex="3" />
+                  <TextField fx:id="textFieldX4" GridPane.rowIndex="4" />
+                  <TextField fx:id="textFieldX5" GridPane.rowIndex="5" />
+                  <TextField fx:id="textFieldYofX3" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="textFieldYofX4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="textFieldYofX5" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </GridPane>
+            <Button fx:id="buttonSolve" mnemonicParsing="false" onAction="#doSolve" prefHeight="25.0" prefWidth="150.0" text="SOLVE" />
+            <Label text="MAX:">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextArea fx:id="textFieldMax" prefColumnCount="1" prefHeight="50.0" prefRowCount="2" prefWidth="130.0" />
+            <Button fx:id="buttonReport" disable="true" mnemonicParsing="false" onAction="#doReport" prefHeight="25.0" prefWidth="150.0" text="SAVE REPORT" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <LineChart fx:id="lineChartMain" alternativeColumnFillVisible="true" createSymbols="false" title="f(x)-g(x) -&gt; max" BorderPane.alignment="CENTER">
+        <xAxis>
+          <NumberAxis label="x" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="y" side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </center>
+</BorderPane>

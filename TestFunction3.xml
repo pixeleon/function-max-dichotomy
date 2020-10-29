@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EquationData>
+	<FFunctionData>
+		<FFunctionTerm Degree = "0" Coeff="3"/>
+	</FFunctionData>
+	<GFunctionData>
+		<GFunctionPair X="0" YofX="0"/>
+		<GFunctionPair X="-1" YofX="-0.84"/>
+		<GFunctionPair X="-3" YofX="-0.14"/>
+		<GFunctionPair X="1" YofX="0.84"/>
+		<GFunctionPair X="3" YofX="0.14"/>
+	</GFunctionData>
+</EquationData>

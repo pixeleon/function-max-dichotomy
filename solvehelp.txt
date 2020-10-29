@@ -1,0 +1,22 @@
+Solving the equation:
+
+The main purpose of this application is to find maximum of the function f(x) - g(x),
+where f(x) and g(x) functions are defined by user.
+For this inside the program the dichotomy (bisection) method is used, that halves the interval
+at each step and discards the half that doesn't contain maximum. 
+The process is carried out until the required accuracy (0.001, by default) is reached.
+Interval is defined as the maximum and the minimum X points for g(x) function.
+
+After defining the functions, you can press SOLVE button in order to find maximum of the
+given function f(x) - g(x). If input data is correct, then the program will find X where
+y(x) has the biggest value for our function. There results will be shown in the form of text
+in the text area below as well as illustrated on the graph on the right. There will be drawn
+f(x), g(x) and f(x) - g(x) functions together with the maximum point.
+
+If the specified function is unsolveable (e.g. f(x) and g(x) are coinciding/parallel), then
+the program will show the corresponding text, however providing graph drawing without just
+the maximum point.
+
+Also, if you want just plot the corresponding graphs without solving the equation, just go 
+(Run -> Plot graph). This is what you need.
+

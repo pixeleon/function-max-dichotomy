@@ -1,0 +1,21 @@
+Inputting data:
+For program to work you have to define functions f(x) and g(x).
+
+f(x) is defined as polynomial of n-th power. For it you have to specify coefficients for each term. 
+Polynomial is entered starting from the zero constant and up to as much coefficients as you need.
+If a term is absent, you still have to specify it with zero (0) coefficient in order to omit it.
+Basically, coefficients can be entered as a list of real values seprated by whitespace 
+(e.g. "0.4 11.1 -33.3" means "0 + 11.1x - 33.3x*x").
+Do not concat coefficients with any other data (characters, math. functions etc.)! It will ruin the work of the program.
+At least zero constant should be defined (or set to zero) in order for program to work.
+
+g(x) is defined as a set of points, pairs of values x / g(x).
+For this you have a table 5x2 where you have to determine function points you need.
+The amount of points should be not less than two (2) and not greater than five (5). 
+However, if you enter more than five pairs for g(x), last odd arguments will be just skipped.
+The only data for g(x) is real numbers that represent values for points. Do not spoil it with characters!
+
+If input is invalid and you press SOLVE button, an application will inform you about incorrect data.
+
+Data can be entered either manually at text fields of the application or via reading from already prepared XML-files.
+These XML-files should be filled according to the defined schema.
