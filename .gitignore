@@ -31,3 +31,7 @@ out/
 *.zip
 *.tar.gz
 *.rar
+
+#Generated reports
+Report.png
+Report.html
