@@ -22,10 +22,10 @@ public abstract class AbstractFFunction implements ExtendedFunction {
 		for(int i = 1; i <= getDegree(); i++) {
 			double a = getA(i);
 				if (a > 0) {
-					sb.append(" +" + a + " ");
+					sb.append(" +").append(a).append(" ");
 				}
 				else {
-					sb.append(" " + a + " ");
+					sb.append(" ").append(a).append(" ");
 				}
 			for(int j = 1; j <= i; j++) {
 				sb.append("x");

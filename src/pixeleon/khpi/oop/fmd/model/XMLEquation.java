@@ -1,6 +1,7 @@
 package pixeleon.khpi.oop.fmd.model;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import javax.xml.bind.*;
 
 import pixeleon.khpi.oop.fmd.model.xml.EquationData;;
@@ -94,7 +95,7 @@ public class XMLEquation extends AbstractEquation {
 	
 	public XMLEquation saveReport(String fileName, String imageName, double a, double b, double eps) throws FileWriteException {
         try (PrintWriter out = new PrintWriter(
-          new OutputStreamWriter(new FileOutputStream(fileName), "UTF-8"))) {
+          new OutputStreamWriter(new FileOutputStream(fileName), StandardCharsets.UTF_8))) {
             out.printf("<html>%n");
             out.printf("<head>%n");
             out.printf("<meta http-equiv='Content-Type' content='text/html; " + 

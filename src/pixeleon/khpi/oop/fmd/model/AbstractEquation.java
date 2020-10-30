@@ -2,8 +2,6 @@ package pixeleon.khpi.oop.fmd.model;
 
 import java.text.DecimalFormat;
 
-import pixeleon.khpi.oop.fmd.model.ExtendedFunction;
-
 public class AbstractEquation {
 	
 	DecimalFormat df = new DecimalFormat("#,####"); 
@@ -59,7 +57,7 @@ public class AbstractEquation {
 		double inity = (f.applyAsDouble(a) - g.applyAsDouble(a));
 		for (double ix = a + 0.1; ix <= b; ix += 0.1) {
 			//System.out.println(df.format((f.applyAsDouble(ix) - g.applyAsDouble(ix))));
-			double iy = Double.valueOf(df.format((f.applyAsDouble(ix) - g.applyAsDouble(ix))));
+			double iy = Double.parseDouble(df.format((f.applyAsDouble(ix) - g.applyAsDouble(ix))));
 			if (iy != inity) {
 				feqg = false;
 				break;

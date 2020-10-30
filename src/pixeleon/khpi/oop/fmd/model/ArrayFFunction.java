@@ -6,9 +6,7 @@ public class ArrayFFunction extends AbstractFFunction {
 
 	public ArrayFFunction(double... arr) {
 		this.arr = arr;
-		for (int i = 0; i <= arr.length - 1; i++) {
-			this.arr[i] = arr[i];
-		}
+		System.arraycopy(arr, 0, this.arr, 0, arr.length - 1 + 1);
 	}
 
 	@Override

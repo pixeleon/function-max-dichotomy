@@ -1,7 +1,7 @@
 package pixeleon.khpi.oop.fmd.model;
 
 import pixeleon.khpi.oop.fmd.model.xml.EquationData;
-import pixeleon.khpi.oop.fmd.model.xml.EquationData.FFunctionData.FFunctionTerm;;
+import pixeleon.khpi.oop.fmd.model.xml.EquationData.FFunctionData.FFunctionTerm;
 
 public class XMLFFunction extends AbstractFFunction {
 	private EquationData data;

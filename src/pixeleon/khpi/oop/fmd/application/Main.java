@@ -11,7 +11,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			primaryStage.setTitle("Function Max Dichotomy");
-			BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("MainWindow.fxml"));
+			BorderPane root = FXMLLoader.load(getClass().getResource("MainWindow.fxml"));
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
